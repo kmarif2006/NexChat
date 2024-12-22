@@ -67,7 +67,7 @@ NexChat is an advanced chat application that combines real-time private messagin
    ```bash  
    npm start  
    ```  
-   Access NexChat in your browser at `http://localhost:3000`.
+
 
 ---
 
