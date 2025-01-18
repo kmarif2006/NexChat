@@ -41,7 +41,6 @@ export const sendMessage = async (req, res) => {
 
     let imageUrl;
     if (image) {
-      // Upload base64 image to cloudinary
       const uploadResponse = await cloudinary.uploader.upload(image);
       imageUrl = uploadResponse.secure_url;
     }
@@ -54,14 +53,15 @@ export const sendMessage = async (req, res) => {
     });
     await newMessage.save();
 
-    //todo:realtime functionality using socket.io
-    const receiverSocketId=getReceiverSocketId(receiverId);
-    if(receiverSocketId){
-      io.to(receiverSocketId).emit("newMessage",newMessage);
+    // Emit socket event
+    const receiverSocketId = getReceiverSocketId(receiverId);
+    if (receiverSocketId) {
+      io.to(receiverSocketId).emit("newMessage", newMessage);
     }
+
     res.status(201).json(newMessage);
-  }catch(error){
-    console.log("Error in sendMessage controller: ",error.message);
-    res.status(500).json({error:"Internal server error"});
+  } catch (error) {
+    console.log("Error in sendMessage controller: ", error.message);
+    res.status(500).json({ error: "Internal server error" });
   }
 };
