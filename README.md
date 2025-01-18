@@ -73,5 +73,7 @@ NexChat is an advanced chat application that combines real-time private messagin
 
 ![Screenshot 2024-12-19 233823](https://github.com/user-attachments/assets/d5d28e4e-df74-4f1f-8b65-11f646e7b81d)![Screenshot 2024-12-19 234124](https://github.com/user-attachments/assets/0c1e7664-c403-4541-a688-75ddfe0bcd82)![Screenshot 2024-12-19 234153](https://github.com/user-attachments/assets/1e78a2ce-1162-404b-b308-3caa1471bb63)
 ![Screenshot 2024-12-19 234248](https://github.com/user-attachments/assets/594d526b-4d94-460e-839c-aaeb03328be2)
-
+🌐 Live Demo
+You can view the live version of NexChat at:
+https://nexchat-f8gw.onrender.com
 
