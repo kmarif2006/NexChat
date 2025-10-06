@@ -8,6 +8,5 @@
   },
   "keywords": [],
   "author": "Arif",
-  "license": "ISC",
-  "description": ""
+  "description": "NexChat is an advanced chat application that combines real-time private messaging with robust image-sharing capabilities, powered by Cloudinary for seamless and efficient image handling. NexChat delivers a smooth, secure, and user-friendly experience for private communication."
 }
